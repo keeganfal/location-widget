@@ -1,11 +1,12 @@
 import './Container.scss';
 
-function Container({text}) {
+const Container = ({text}) => {
+
   return (
     <div className="container">
         <p>{text}</p> 
     </div>
   );
-}
+};
 
 export default Container;
