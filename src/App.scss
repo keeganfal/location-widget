@@ -1,9 +1,60 @@
 .App {
   text-align: center;
-  display: flex;
-  margin-left: 12rem;
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
 
   .main{
-    display: flex;
+    display: grid;
+    height: 100%;
+    width: 70vw;
+
+    align-items: center;
+    justify-items: center;
+
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+    grid-row-start: 1;
+    grid-row-end: 4;
+
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+
+    .item-1{
+      height:97.5%;
+      width: 97.5%;
+
+      grid-column-start: 1;
+      grid-column-end: 3;
+
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+
+    .item-2{
+      height:95%;
+      width: 95%;
+
+      grid-column-start: 1;
+      grid-column-end: 2;
+
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+
+    .item-3{
+      height:95%;
+      width: 95%;
+
+      grid-column-start: 2;
+      grid-column-end: 3;
+
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
   }
 }
