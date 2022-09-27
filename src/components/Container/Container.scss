@@ -1,9 +1,6 @@
 
-.sidebar{
-  position: fixed;
-  margin: 0;
-  top: 0;
-  left: 0;
+.container{
+  position: relative;
   height: 100%;
   width: 12rem;
   display: flex;
@@ -12,19 +9,22 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 15px;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+
+  margin: 10px;
 }
 
-.sidebar:before {
-  border-radius: 15px;
+.container:before {
+  border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
   content: '';
   height: 100%;
   position: absolute;
   width: 100%;
+
 }
 
-i{
+p{
   color: #6f7886;
   z-index: 2;
 }
