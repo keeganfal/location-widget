@@ -12,8 +12,8 @@
     height: 100%;
     width: 70vw;
 
-    align-items: center;
-    justify-items: center;
+    align-items: stretch;
+    justify-items: stretch;
 
     grid-column-start: 2;
     grid-column-end: 4;
@@ -25,36 +25,41 @@
     grid-template-rows: auto auto;
 
     .item-1{
-      height:95%;
-      width: 95%;
-
+      height: auto;
+      width: auto;
       grid-column-start: 1;
       grid-column-end: 3;
 
       grid-row-start: 1;
       grid-row-end: 2;
+
+      padding: 10px;
     }
 
     .item-2{
-      height:95%;
-      width: 95%;
+      height: auto;
+      width: auto;
 
       grid-column-start: 1;
       grid-column-end: 2;
 
       grid-row-start: 2;
       grid-row-end: 3;
+
+      padding: 10px;
     }
 
     .item-3{
-      height:95%;
-      width: 95%;
+      height: auto;
+      width: auto;
 
       grid-column-start: 2;
       grid-column-end: 3;
 
       grid-row-start: 2;
       grid-row-end: 3;
+
+      padding: 10px;
     }
   }
 }
